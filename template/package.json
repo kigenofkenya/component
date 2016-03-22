@@ -5,9 +5,10 @@
   {{#private}}
   "private": true,
   {{/private}}
+  "main": "./src/index.vue",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "dev": "webpack-dev-server --inline --hot --content-base demo/",
+    "build:demo": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
     "vue": "^1.0.0"
