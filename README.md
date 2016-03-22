@@ -1,6 +1,6 @@
-# vue-webpack-simple-boilerplate
+# vue-component-boilerplate
 
-> A simple Webpack setup for `vue-loader` for quick prototyping.
+> A simple Component setup for quick prototyping.
 
 ### Usage
 
@@ -8,7 +8,7 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init webpack-simple my-project
+$ vue init coffcer/vue-cli-component my-project
 $ cd my-project
 $ npm install
 $ npm run dev
@@ -16,11 +16,14 @@ $ npm run dev
 
 ### What's Included
 
-- `npm run dev`: Webpack + `vue-loader` with proper config for source maps & hot-reload.
+- `npm run dev`: Live the component in your local server.
 
-- `npm run build`: Production build with HTML/CSS/JS minification.
+- `npm run build:demo`: Build the demo, and then you can push it to the gh-pages branch.
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+- `npm run build:component`: (unfinished) Build the component *.vue file.
+
+- `npm run ghpages`: (unfinished) push the demo to the gh-pages branch.
+
 
 ### Fork It And Make Your Own
 
