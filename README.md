@@ -18,11 +18,9 @@ $ npm run dev
 
 - `npm run dev`: Live the component in your local server.
 
-- `npm run build:demo`: Build the demo, and then you can push it to the gh-pages branch.
+- `npm run build`: Build the component to UMD js
 
-- `npm run build:component`: (unfinished) Build the component *.vue file.
-
-- `npm run ghpages`: (unfinished) push the demo to the gh-pages branch.
+- `npm run test`: (unfinished) Run test.
 
 
 ### Fork It And Make Your Own

@@ -2,14 +2,11 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './demo/index.js',
-  output: {
-    path: path.resolve(__dirname, 'demo'),
-    publicPath: '/demo/',
-    filename: 'bundle.js'
-  },
   resolveLoader: {
-    root: path.join(__dirname, 'node_modules'),
+    root: path.join(__dirname, '../node_modules'),
+  },
+  resolve: {
+    extensions: ['', '.js', '.vue']
   },
   module: {
     loaders: [
@@ -39,10 +36,5 @@ module.exports = {
         }
       }
     ]
-  },
-  devServer: {
-    historyApiFallback: true,
-    noInfo: true
-  },
-  devtool: 'eval-source-map'
+  }
 }
