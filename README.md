@@ -8,8 +8,8 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init coffcer/vue-cli-component my-project
-$ cd my-project
+$ vue init coffcer/component my-component
+$ cd my-component
 $ npm install
 $ npm run dev
 ```
