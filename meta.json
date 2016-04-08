@@ -3,17 +3,22 @@
     "name": {
       "type": "string",
       "required": true,
-      "label": "Project name"
+      "label": "Component name"
     },
     "description": {
       "type": "string",
       "required": true,
       "label": "Project description",
-      "default": "A Vue.js project"
+      "default": "A Vue.js component"
     },
     "author": {
       "type": "string",
       "label": "Author"
+    },
+    "port": {
+      "type": "number",
+      "label": "Dev port",
+      "default": 8080
     },
     "private": {
       "type": "boolean",
