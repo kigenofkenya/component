@@ -13,4 +13,7 @@ npm run dev
 
 # build the component to UMD js
 npm run build
+
+# build the dev page
+npm run build:demo
 ```

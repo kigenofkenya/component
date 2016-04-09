@@ -20,6 +20,8 @@ $ npm run dev
 
 - `npm run build`: Build the component to UMD js
 
+- `npm run build:demo`: Build the dev page, and then you can push it to gh-pages branch.
+
 - `npm run test`: (unfinished) Run test.
 
 
