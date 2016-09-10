@@ -5,8 +5,8 @@ var config = require('./base');
 module.exports = Object.assign({}, config, {
     entry: './dev/index.js',
     output: {
-      path: path.resolve(__dirname, '../dev/'),
-      //publicPath: '../dev/',
+      path: path.resolve(__dirname, '../dev'),
+      publicPath: '/dev/',
       filename: 'bundle.js'
     },
     devServer: {
