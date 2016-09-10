@@ -10,7 +10,7 @@ module.exports = Object.assign({}, config, {
       library: ['{{ name }}'],
       libraryTarget: 'umd'
     },
-    devtool: '#source-map',
+    devtool: false,
     plugins: [
       new webpack.DefinePlugin({
         'process.env': {
