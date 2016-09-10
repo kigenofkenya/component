@@ -28,10 +28,6 @@ module.exports = {
         loader: 'json'
       },
       {
-        test: /\.html$/,
-        loader: 'vue-html'
-      },
-      {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'url',
         query: {
