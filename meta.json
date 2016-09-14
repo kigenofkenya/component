@@ -23,6 +23,14 @@
     "private": {
       "type": "boolean",
       "default": true
-    }
-  }
+    },
+    "test": {
+      "type": "confirm",
+      "message": "Setup unit tests with Karma + Mocha?"
+    },
+  },
+  "filters": {
+    "test/**/*": "test"
+  },
+  "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev\n\nDocumentation can be found at https://github.com/Coffcer/component"
 }
