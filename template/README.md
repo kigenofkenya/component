@@ -16,4 +16,7 @@ npm run build
 
 # build the dev page
 npm run build:demo
+
+# test
+npm run test
 ```
