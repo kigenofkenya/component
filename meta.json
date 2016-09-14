@@ -27,7 +27,7 @@
     "test": {
       "type": "confirm",
       "message": "Setup unit tests with Karma + Mocha?"
-    },
+    }
   },
   "filters": {
     "test/**/*": "test"
