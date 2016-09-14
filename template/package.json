@@ -6,7 +6,7 @@
   {{#private}}
   "private": true,
   {{/private}}
-  "main": "./src/index.vue",
+  "main": "./dist/{{ name }}.js",
   "scripts": {
     {{#test}}
     "test": "karma start ./test/karma.conf.js",
