@@ -8,17 +8,26 @@
   {{/private}}
   "main": "./src/index.vue",
   "scripts": {
+    {{#test}}
+    "test": "karma start ./test/karma.conf.js",
+    {{/test}}
     "dev": "webpack-dev-server --inline --hot --config ./build/dev.js --port {{ port }}",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config ./build/prod.js && npm run build:demo",
-    "build:demo": "cross-env NODE_ENV=production webpack --progress --hide-modules --config ./build/dev.js",
-    {{#test}}
-    "test": "karma start ./test/karma.conf.js"
-    {{/test}}
+    "build:demo": "cross-env NODE_ENV=production webpack --progress --hide-modules --config ./build/dev.js"
   },
   "dependencies": {
     "vue": "^1.0.0"
   },
   "devDependencies": {
+    {{#test}}
+    "karma": "^1.3.0",
+    "karma-mocha": "^1.1.1",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-spec-reporter": "0.0.26",
+    "karma-webpack": "^1.8.0",
+    "mocha": "^3.0.2",
+    "phantomjs": "^2.1.7",
+    {{/test}}
     "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
@@ -36,15 +45,6 @@
     "vue-loader": "^8.2.1",
     "vue-style-loader": "^1.0.0",
     "webpack": "^1.12.2",
-    "webpack-dev-server": "^1.12.0",
-    {{#test}}
-    "karma": "^1.3.0",
-    "karma-mocha": "^1.1.1",
-    "karma-phantomjs-launcher": "^1.0.2",
-    "karma-spec-reporter": "0.0.26",
-    "karma-webpack": "^1.8.0",
-    "mocha": "^3.0.2",
-    "phantomjs": "^2.1.7",
-    {{/test}}
+    "webpack-dev-server": "^1.12.0"
   }
 }
